@@ -1,0 +1,504 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+:root{
+    --primary:#F77D0A;
+    --secondary:#2B2E4A;
+    --text:#8486A0;
+    --light: #F4F5F8;
+    --dark: #1C1E32;
+}
+/*********** header *************/
+#header{
+    background-color: var(--secondary);
+}
+/*********** navbar *************/
+#nav{
+    padding: 0rem .5rem 0rem .5rem;
+    text-transform: uppercase;
+}
+.navbar-list {
+    list-style-type: none;
+    font-size: 1.6rem;
+    float: right;
+}
+#logo{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--primary);
+    text-decoration: none;
+}
+.navbar-item{
+    display: inline-block;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+.navbar-item-link{
+    color: var(--light);
+    text-decoration: none;
+}
+.navbar-item-link:hover{
+    color: var(--primary);
+    border-bottom: 0.2rem solid var(--primary);
+}
+/* .navbar-item-link:active{
+    color: var(--primary);
+    border-bottom: 0.2rem solid var(--primary);
+} */
+#check{
+    display: none;
+}
+#checkbtn{
+    float: right;
+    display: none;
+}
+.navbar-item label{
+    position: absolute;
+    justify-self:auto;
+}
+.dropdown{
+    position: relative;
+    display: none;
+}
+/*********** navbar *************/
+/*********** header *************/
+
+
+/*********** about us *************/
+.about-us{
+    width: 100%;
+    text-align: center;  
+    margin-bottom: 5rem;
+}
+h1{
+    margin: 3rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--dark);
+    text-transform:uppercase;
+    text-align: center  ;
+}
+span{
+    color: var(--primary);
+}
+.about-us img{
+    width: 100%;
+}
+.about-us p{
+    color: var(--text);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.about-box{
+    background-color: var(--secondary);
+    color: var(--light);
+}
+.support-box{
+    /* background-color: var(--secondary); */
+    display:flex;
+    padding:1.5rem 1.5rem 1.5rem 0rem;  
+    text-transform: uppercase;
+}
+.i{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 1.5rem 2.5rem 0rem 2.5rem;;
+    font-size: 2.8rem;
+}
+.support-box h5{
+    padding: 1rem ;
+    font-size: 1.5rem;
+}
+/*********** about us *************/
+
+/*********** service *************/
+.service-box-section{
+    background-color: var(--light);
+    color:var(--secondary);
+}
+.service-box-section:hover{
+    background-color: var(--secondary);
+    color:var(--light);
+    cursor: pointer;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.service-box h3, p{
+    padding: 1rem 1rem 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.service-box p{
+    font-size: .8rem;
+}
+.service-icon{
+    padding: 1rem 1rem 1rem 0rem;
+}
+.service-icon h2{
+    float: right;
+    font-size: 6rem;
+    font-weight: bolder;
+}
+.service-icon i{
+    background-color: var(--primary);
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+/*********** service *************/
+
+/*********** offer *************/
+.offer-section{
+    background-image: url(../image/bg-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+.offer-overlay{
+    background-color: rgba(11, 11, 11, 0.7);
+    padding: 100px;
+}
+.offer h2{
+    font-size: 5rem;
+    color: var(--primary);
+    font-weight: bolder;
+    margin: 1rem 0rem;
+}
+.offer h3{
+    font-size: 2.6rem;
+    color: var(--light);
+    font-weight: bolder;
+}
+.offer p{
+    font-size: 1.5rem;
+    color: var(--text);
+    text-transform: capitalize;
+}
+button{
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 1rem 1.9rem;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border: none;
+    margin: 1rem 0rem;
+}
+button:hover{
+    background-color: var(--text);
+    cursor: pointer;
+}
+/*********** offer *************/
+
+/*********** find car *************/
+.find-car-box-section{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--light);
+    margin: 1rem 0rem;
+    padding: 1.5rem;    
+}
+img{
+    width: 100%;
+}
+.find-car-box-section h2{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 1.5rem 0rem;
+}
+.find-car-icon i{
+    color: var(--primary);
+}
+.find-car-icon span{
+    color: var(--dark);
+    border-right: 1px solid var(--primary);
+    padding: 0rem .5rem;
+}
+.find-car-box button{
+    border: none;
+    border-radius: 5%;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.4rem 0.6rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+.find-car-box-section:hover{
+    background-color: var(--secondary);
+    color: var(--light);
+    cursor: pointer;
+    transform:scale(.95);
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+/*********** find car *************/
+
+/*********** drive *************/
+.drive-section{
+    display: flex;
+    background-color: var(--secondary);color: var(--light);
+    text-transform: uppercase;
+}
+.drive-section{
+    text-align: end;
+}
+.drive-section img{
+    padding: 2rem 2rem 2rem 0rem;  
+    width: 100% ;
+}
+.driver{
+    text-align: start;
+    background-color: var(--dark);
+}
+.drive-img{
+    width: 50%;
+}
+.driver img{
+    padding: 2rem 0rem 2rem 2rem;
+}
+.drive-text{
+    padding: 2rem 2rem 1rem 0rem ;
+    width: 70%;
+}
+.drive-textt{
+    width: 70%;
+    padding: 2rem 0rem 1rem 2rem;
+}
+.drive-section h2{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: 2rem 0rem 1rem 0rem;
+}
+.drive-section p{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0rem;
+    margin: 1.3rem 0rem ;
+    color: var(--text);
+}
+.drive-section button{
+    border: none;
+    border-radius: 5%;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+}
+/*********** drive *************/
+
+/*********** contact us *************/
+.form{
+    background-color: var(--light);
+    padding: 2rem;
+    height:390px;
+}
+.name{
+    margin: 0rem ;
+    padding: .6rem;
+    float: left;
+    width: 48%;
+}
+.email{
+    width: 48%;
+    margin: 0rem ;
+    padding: .6rem;
+    float: right;
+}
+.message{
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    overflow: hidden;
+}
+.subject{
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: .6rem;
+}
+.submit-btn{
+    float: left;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: .6rem 1rem;
+    font-size: 1rem;
+}
+.contact-detail{
+    background-color: var(--secondary);
+    padding: 2rem 4rem;
+    /* width: 450px; */
+}
+.detail-box{
+    display: flex;
+    margin: 1.2rem 0rem;
+}
+.detail-box i{
+    font-size: 2.3rem;
+    color: var(--primary);
+    margin-top: .4rem;
+}
+.detail-text h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 0rem;
+    padding: 0rem 1rem;
+    color: var(--light);
+}
+.detail-text p{
+    font-size: .85rem;
+    color:var(--text);
+    margin: 0rem;
+    padding: .4rem 1rem;
+}
+.detail-text{
+    text-align: left;
+}
+/*********** contact us *************/
+
+/*********** footer *************/
+.footer{
+    background-color:var(--secondary);
+    padding:5rem 3rem ;
+    color: var(--light);
+}
+.footer h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+}
+.footer h4{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+/*********** grt i n touch *************/
+.info{
+    display: flex;
+    margin: 1rem 0rem;
+}
+.info p{
+    font-size: 1rem;
+    color: var(--text);
+    margin: 0rem;
+    padding: 0rem 1rem;
+}
+.info i{
+    font-size: 1rem ;
+    margin: .3rem 0rem;
+}
+.social-icon{
+    display: flex;
+    margin: .8rem 0rem;
+}
+.social-icon i{
+    margin: 0rem .3rem;
+    background-color: var(--dark);
+    padding: .7rem;
+    font-size: 1.5rem;
+}
+#social{
+    padding: .7rem .9rem;
+}
+.social-icon i:hover{
+    background-color: var(--light);
+    color: var(--primary);
+    cursor: pointer;
+}
+/*********** get in touch *************/
+
+
+/*********** useffull links *************/
+.link{
+    display: flex;
+    margin: .5rem 0rem;
+}
+.link a{
+    font-size: 1.2rem;
+    color: var(--text);
+    padding: 0rem .8rem;
+    text-decoration: none;
+}
+.link i{
+    font-size: 1rem ;
+    margin: .4rem 0rem;
+}
+.link a:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+/*********** usefull links *************/
+
+/*********** gallery *************/
+.car img{
+    width: 100%;
+}
+.car{
+    overflow: hidden;
+}
+.car img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+/*********** gallery *************/
+
+/*********** news *************/
+.news-section h3{
+    margin-left: 1rem;
+    margin-bottom: .3rem;
+}
+.news p{
+    font-size: .8rem;
+    color: var(--text); 
+}
+.news-btn{
+    display: flex;
+}
+.news-input{
+    width: 70%;
+    padding:.8rem;
+    margin-left: 1rem;
+    background-color: var(--dark);
+    border: none;
+}
+.news button{
+    padding: 0rem .3rem;
+    margin: 0rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/*********** news *************/
+/*********** footer *************/
+
+/*********** copyright *************/
+.copyright{
+    background-color: var(--dark);
+    text-align: center;
+    padding: 1.5rem;
+}
+.copyright-text p{
+    color: var(--text);
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0rem;
+    padding: .2rem;
+}
+.copyright a{
+    text-decoration: none;
+}
+.copyright a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--primary)   ;
+}
+/*********** copyright *************/
+
