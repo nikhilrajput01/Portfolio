@@ -1,18 +1,16 @@
 
-/////////////// find car ////////////////////////
-document.querySelectorAll('.find-car-box-section').forEach((find) => {
-    find.addEventListener('mouseover',function(){
-        const select=this.querySelectorAll('.find-car-icon span')
-        select.forEach((apply) =>{
-            apply.style.color='#F4F5F8'
-        })
+function navtogglebtn() {
+    let button =document.getElementById('navbtn')
+    let content =document.getElementById('navbarNav')
+    
+    button.addEventListener('click',()=>{
+      if (content.style.display==='none' || content.style.display==='') {
+        content.style.display="block"
+      } 
+      else {
+        content.style.display="none"
+      }
+      
     })
-    find.addEventListener('mouseout',function(){
-        const remove= this.querySelectorAll('.find-car-icon span')
-        remove.forEach((out) => {
-            
-            out.style.color=''
-        });
-    })
-});
-/////////////// find car ////////////////////////
+  }
+  navtogglebtn()
